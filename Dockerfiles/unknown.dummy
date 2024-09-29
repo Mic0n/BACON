@@ -1,0 +1,3 @@
+FROM alpine:latest
+CMD ["echo", "Security Policy unknown"]
+CMD [ "sleep", "10000000000" ]

@@ -1,0 +1,4 @@
+FROM alpine:latest
+LABEL policy="Mid"
+CMD ["echo", "Security Policy Mid"]
+CMD [ "sleep", "10000000000" ]

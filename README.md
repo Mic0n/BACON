@@ -1,5 +1,5 @@
 # BACON
-![overview](https://github.com/user-attachments/assets/0db8264c-1aee-4ff9-ad05-1fe4fb710c42)
+![image](https://github.com/user-attachments/assets/70a04d69-ab02-4f7d-a9e0-fa59e94739dc)
 
 The goal of this project is to create a virtual machine which uses Intel TDX protecting the confidentiality and integrity of virtual machines (Trusted Domain or TD).
 Inside this TD we provide a script which allows the user to interact in a user friendly way with signed Images and Containers. The keys are stored also inside the TD.
@@ -61,7 +61,7 @@ By default secure boot is disabled and needs also to be enabled using gcloud cli
   trustauthority-cli quote
   ```
   the result should look like this
-  ![image](https://github.com/user-attachments/assets/d7cfc9f1-4f58-495f-a91f-bae3cd402cf4)
+  ![Screenshot 2024-09-24 175335](https://github.com/user-attachments/assets/9ca01315-c951-4d20-915e-ab994f76036f)
   
 - Typically the quote would be sent to Intel Trust Authority in order to Verify. This is currently not possible for end users due to intel not providing API Keys to end users
     - this would be done by configuring a config file with the right credentials eg.
@@ -228,7 +228,8 @@ Three different policy levels are available:
 You are only able to start a container if your policy level is equal or higher than the containers policy level.
 E.g. if your security level is mid and container is low you can start the container.
 If your security level is mid and container is high you are unable to start the container.
-![showcase](https://github.com/user-attachments/assets/1be0cdae-9b8c-4f89-8487-544c1ba4661a)
+![showcase](https://github.com/user-attachments/assets/6a12f4d7-9799-459d-8168-710588eb1295)
+
 
 
 
